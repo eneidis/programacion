@@ -264,22 +264,22 @@ def registrar_cliente(nombre,id,email):
 
 print("SIMULACIÓN DEL SISTEMA\n")
 
-#1
+#1 Registro válido
 registrar_cliente("Carlos","1001","carlos@gmail.com")
 
-#2
+#2 Registro válido 
 registrar_cliente("Ana","1002","ana@gmail.com")
 
-#3
+#3 Registro fallido (Correo inválido) -> NO se agrega a la lista
 registrar_cliente("Lu","1003","correo")
 
-#4
+#4 Registro válido
 registrar_cliente("Pedro","1004","pedro@gmail.com")
 
-#5
+#5 Registro válido
 registrar_cliente("Maria","1005","maria@gmail.com")
 
-#6
+#6 Reserva de sala exitosa 
 try:
 
     servicio1=ReservaSala(5)
@@ -294,7 +294,7 @@ except Exception as e:
 
     Logger.registrar(str(e))
 
-#7
+#7 Creación de Servicio Fallido (Horas Negativas)
 try:
 
     servicio2=ReservaSala(-4)
@@ -303,7 +303,7 @@ except Exception as e:
 
     Logger.registrar(str(e))
 
-#8
+#8 Alquiler de equipo exitoso 
 try:
 
     servicio3=AlquilerEquipo(3)
@@ -318,7 +318,7 @@ except Exception as e:
 
     Logger.registrar(str(e))
 
-#9
+#9 Asesoría exitosa 
 try:
 
     servicio4=AsesoriaEspecializada(2)
