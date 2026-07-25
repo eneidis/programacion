@@ -336,6 +336,8 @@ except Exception as e:
 #10 Reserva fallida por tipo de cliente inválido
 try:
 
+    servicio_temp=AsesoriaEspecializada(1)
+    
     reserva4=Reserva("Cliente_Invalido_String",servicio4)
 
 except Exception as e:
