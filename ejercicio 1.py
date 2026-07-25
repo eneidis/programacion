@@ -333,10 +333,12 @@ except Exception as e:
 
     Logger.registrar(str(e))
 
-#10
+#10 Reserva fallida por tipo de cliente inválido
 try:
 
-    reserva4=Reserva("Cliente",servicio4)
+    servicio_temp=AsesoriaEspecializada(1)
+
+    reserva4=Reserva("Cliente_Invalido_String",servicio4)
 
 except Exception as e:
 
